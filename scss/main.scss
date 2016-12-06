@@ -1,0 +1,36 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass", "normalize";
+
+#blur-div{
+	position: relative;
+
+	width: 800px;
+	height: 600px;
+	margin: 0 auto;
+}
+
+#blur-image{
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	// display: block;
+	width: 800px;
+	height: 600px;
+	margin: 0 auto;
+	z-index: 0;
+
+	filter: blur(5px);
+}
+
+#canvas{
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	z-index: 10;
+}
